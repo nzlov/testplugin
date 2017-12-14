@@ -2,7 +2,6 @@ package main
 
 import (
 	"plugin"
-	"time"
 )
 
 func main() {
@@ -16,5 +15,4 @@ func main() {
 		panic(err)
 	}
 	add.(func())()
-	time.Sleep(time.Second * 5)
 }
